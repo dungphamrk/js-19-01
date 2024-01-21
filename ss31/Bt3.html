@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt3</title>
+</head>
+<body>
+    <script>
+        function confirmEnding(str,s) {
+            let n=str.slice(str.length-s.length,str.length);
+            if (n===s) {
+                return true;
+            }
+            return false;
+        }
+        let str="Hello world";
+        let s="world";
+        console.log( confirmEnding(str,s));
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt4</title>
+</head>
+<body>
+    <script>
+        function truncate(str, num) {
+            let result=str.slice(0,str.length-num)+"...";
+            return result;
+        }
+        let str="Hello world, I’m Peter";
+        let num =+prompt("nhap so luong ky tu muon rut gon");
+        console.log(truncate(str,num));
+    </script>
+</body>
+</html>

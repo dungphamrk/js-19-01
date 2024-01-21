@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt6</title>
+    </head>
+    <body>
+        <script>
+            function fakeFilter(arr,check) {
+                let result=new Array();
+                for (let i = 0; i < arr.length; i++) {
+                    if (check(arr[i])) {
+                        result.push(arr[i]);
+                    }
+                }
+                if (!isNaN(result[0])) {
+                    return result;
+                }
+                return undefined;
+            }
+      console.log( fakeFilter([1,2,3,4], function(e) {
+                if(e % 2 === 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }) );
+
+    </script>
+    </body>
+</html>

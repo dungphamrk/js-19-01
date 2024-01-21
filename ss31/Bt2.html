@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt2</title>
+</head>
+<body>
+    <script>
+        function largestOfArrs(arr) {
+            let result=new Array();
+            for (let i = 0; i < arr.length; i++) {
+                let max=arr[i][0];
+                for (let j = 0; j < arr[i].length; j++) {
+                    if (max<arr[i][j]) {
+                        max=arr[i][j];
+                    }
+                    
+                }
+                result.push(max);
+            }
+            return result;
+        }
+        let arr=[[1, 2, 3, 4], [-1, -2, -3], [5, 1, 2, 9]];
+        console.log(largestOfArrs(arr));
+    </script>
+</body>
+</html>
